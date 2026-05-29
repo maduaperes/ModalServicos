@@ -12,14 +12,13 @@ A proposta é ensinar conceitos básicos de manipulação do DOM e controle de v
 
 ```
 
-.
 ├── index.html
 ├── style.css
 ├── app.js
 ├── AulaModal/
 └── .gitattributes
 
-```id="aula_tree_01"
+```
 
 ---
 
