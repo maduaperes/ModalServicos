@@ -1,91 +1,82 @@
-# AulaModal
+# ModalServicos
 
 ## Visão Geral
+O **ModalServicos** é uma aplicação web desenvolvida com tecnologias front-end nativas (HTML5, CSS3 e JavaScript) projetada com foco didático. O objetivo principal do projeto é demonstrar a implementação, o comportamento e a estilização de um componente de interface do tipo **modal** (janela sobreposta), explorando eventos e manipulação dinâmica da árvore do DOM.
 
-O projeto **AulaModal** é uma aplicação web simples desenvolvida com HTML, CSS e JavaScript com o objetivo de demonstrar o funcionamento de um **modal (janela flutuante)** na interface.
+---
 
-A proposta é ensinar conceitos básicos de manipulação do DOM e controle de visibilidade de elementos utilizando JavaScript puro.
+## Funcionalidades Principais
+* **Abertura Dinâmica:** Inicialização e exibição do componente modal por meio de eventos de clique em gatilhos específicos.
+* **Fechamento Flexível:** Mecanismo de ocultação do modal acionado tanto pelo botão interno de encerramento quanto por cliques na área externa (overlay).
+* **Controle de Estado Nativo:** Gerenciamento de visibilidade realizado via JavaScript puro (Vanilla JS), sem dependência de bibliotecas externas.
+* **Camada de Sobreposição (Overlay):** Bloqueio visual do plano de fundo para focar a atenção do usuário no conteúdo do componente.
+
+---
+
+## Tecnologias e Conceitos Utilizados
+* **Estruturação:** HTML5
+* **Estilização:** CSS3 (Posicionamento absoluto/fixo, z-index e centralização)
+* **Comportamento:** JavaScript Nativo (Vanilla JS)
+* **Conceitos de UI/UX:** Manipulação do DOM, escuta de eventos (Event Listeners) e gerenciamento de classes CSS.
 
 ---
 
 ## Estrutura do Projeto
+Organização dos arquivos essenciais do repositório:
+
+```text
+ModalServicos/
+├── index.html       # Estrutura de marcação do documento e do container do modal
+├── style.css        # Regras de layout, centralização do modal e efeito de overlay
+└── app.js           # Lógica de controle, captura de cliques e alternância de classes
 
 ```
 
-├── index.html
-├── style.css
-├── app.js
-├── AulaModal/
-└── .gitattributes
+> **Nota:** Arquivos auxiliares e diretórios de cache local foram incluídos no fluxo do .gitignore para manter o código limpo e focado no escopo do componente.
+
+---
+
+## Detalhes de Implementação
+
+### Estrutura (HTML)
+
+O arquivo `index.html` define o ponto de entrada da aplicação, contendo o botão de gatilho principal e a estrutura semântica do modal encapsulada, garantindo acessibilidade e fluxo correto de renderização.
+
+### Estilização (CSS)
+
+O arquivo `style.css` lida com o isolamento visual do modal utilizando propriedades de profundidade (`z-index`) e esmaecimento de fundo, além de prover transições suaves para a exibição do conteúdo.
+
+### Comportamento (JavaScript)
+
+O arquivo `app.js` monitora as interações do usuário. Ele adiciona e remove classes utilitárias do CSS para alternar os estados de visibilidade do modal com base nos eventos detectados na interface.
+
+---
+
+## Como Executar o Projeto
+
+1. **Clonar o repositório:**
+```bash
+git clone [https://github.com/maduaperes/ModalServicos.git](https://github.com/maduaperes/ModalServicos.git)
 
 ```
 
----
 
-## Funcionalidades
+2. **Navegar até a pasta:**
+```bash
+cd ModalServicos
 
-- Abertura de modal ao interagir com botão ou elemento específico
-- Fechamento do modal via botão ou ação externa
-- Controle de visibilidade com JavaScript
-- Interface simples para fins didáticos
-- Estrutura leve e fácil de entender
+```
 
----
 
-## Interface
-
-### index.html
-Página principal do projeto contendo:
-
-- Estrutura base da aplicação
-- Botão para abrir o modal
-- Estrutura do modal (camada sobreposta)
-- Elemento de fechamento do modal
+3. **Executar a aplicação:**
+Abra o arquivo `index.html` diretamente em qualquer navegador web ou utilize a extensão Live Server para execução local.
 
 ---
 
-## JavaScript
+## Objetivo Educacional
 
-### app.js
-Responsável por controlar o comportamento do modal:
+Este repositório serve como material prático de portfólio para consolidar o aprendizado em:
 
-- Exibir o modal ao clicar em um botão
-- Ocultar o modal ao clicar no botão de fechar
-- Possível fechamento ao clicar fora do modal (dependendo da implementação)
-- Manipulação direta de classes ou estilos via DOM
-
----
-
-## CSS
-
-### style.css
-Responsável pela estilização da aplicação, incluindo:
-
-- Estilo do modal (centralização e sobreposição)
-- Fundo escurecido (overlay)
-- Animações simples de abertura/fechamento
-- Estilo do botão de ação
-- Layout geral da página
-
----
-
-## Conceitos Trabalhados
-
-- Manipulação do DOM
-- Eventos de clique
-- Controle de classes CSS via JavaScript
-- Exibição e ocultação de elementos
-- Noção básica de UI/UX com modais
-
----
-
-## Objetivo
-
-O objetivo do projeto é ensinar de forma prática:
-
-- Como funciona um modal na web
-- Como controlar elementos dinamicamente com JavaScript
-- Como estruturar uma interface simples e interativa
-- Fundamentos de interação com o usuário
-
----
+* Fluxo de renderização e posicionamento de elementos em CSS.
+* Captura de eventos e delegação em JavaScript.
+* Criação de componentes de interface de usuário reutilizáveis e modulares.
